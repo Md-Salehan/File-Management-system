@@ -1,0 +1,254 @@
+.registerPage{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(187, 225, 255, 0.1) 0%, rgba(187, 225, 255, 0.19) 100%), rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registerHeader{
+    margin: 0 auto 20px auto;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+}
+.headerContainer img{
+    width: 30px;
+    height: 30px;
+}
+.headerContainer h1{
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #000;
+}
+.registerHeader a:hover{
+    text-decoration: none;
+}
+.registerForm{
+    width: 40vw;
+    height: fit-content;
+    position: relative;
+    background-color: white;
+    margin: 0 auto 0 auto;
+    padding-bottom: 3%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px 0px #d6f3ff;
+}
+.registerForm img{
+    width: 6vw;
+    height: 9vh;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.registerForm h1{
+    text-align: center;
+    margin-top: 12vh;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.data-div{
+    width: 30vw;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.data-div input{
+    margin-top: 2vh;
+    color: rgb(33, 33, 33);
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 4px;
+    height: 48px;
+    font-size: 1rem;
+    padding: 0px 12px;
+    background: rgb(250, 250, 250);
+}
+.data-div input:focus{
+    outline: none;
+}
+.name-div{
+    width: 31.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fname{
+    width: 20vw;   
+}
+.lname{
+    width: 20vw;
+    margin-left: 10px;
+}
+.phone-num, .email, .password{
+    width: 30vw;
+}
+.data-div p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 3vh;
+    text-align: center;
+    color: grey;
+}
+p .login{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color:  rgb(12, 123, 235);
+    
+}
+p a{
+    text-decoration: none !important;
+}
+.btn-container{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto 0 auto;
+}
+.payment-btn{
+    padding: 10px 20px 10px 20px !important;
+    background-color: rgb(1,96,235) !important;
+    background-image: linear-gradient(
+        90deg,hsla(0,0%,100%,.19),hsla(0,0%,100%,0) 49.71%);
+    border: 0 !important;
+    border-radius: 20px !important;
+    margin: 0 !important;
+    text-transform: none !important;
+    outline: none !important;
+}
+.payment-btn span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .registerForm{
+        width: 80vw;
+        height: fit-content;
+    }
+    .registerForm h1{
+        font-size: 2rem;
+    }
+    .registerForm img{
+        width: 15%;
+        height: 20%;
+        top: 15px;
+    }
+    .data-div{
+        width: 60vw;
+    }
+    .data-div input{
+        margin-top: 2vh;
+        height: 5vh;
+        font-size: 1rem;
+        padding: 0px 12px;
+    }
+    .fname{
+        width: 24vw;   
+    }
+    .lname{
+        width: 38vw;
+    }
+    .phone-num, .email, .password{
+        width: 60vw;
+    }
+    .data-div p{
+        font-size: 1rem;
+    }
+    .payment-btn span{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .registerForm h1{
+        font-size: 1.85rem;
+    }
+    .registerForm img{
+        width: 15vw;
+        height: 12vh;
+        top: 15px;
+    }
+    .data-div input{
+        font-size: 0.85rem;
+    }
+    .data-div p{
+        font-size: 0.95rem;
+    }
+    .payment-btn span{
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .registerForm{
+        width: 90vw;
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    .registerForm img{
+        width: 20vw;
+        height: 12vh;
+        top: 5px;
+    }
+    .registerForm h1{
+        font-size: 1.5rem;
+    }
+    .data-div{
+        width: 80vw;
+    }
+    .fname{
+        width: 30vw;   
+    }
+    .lname{
+        width: 48vw;
+    }
+    .phone-num, .email, .password{
+        width: 80vw;
+    }
+    .data-div input{
+        margin-top: 2vh;
+        height: 48px;
+        font-size: 1rem;
+        padding: 0px 12px;
+    }
+    .data-div input{
+        font-size: 0.75rem;
+    }
+    .data-div p{
+        font-size: 0.85rem;
+    }
+    .payment-btn span{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .registerForm h1{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .registerForm img{
+        width: 20vw;
+        height: 12vh;
+        top: 0px;
+    }
+    .data-div input{
+        font-size: 0.75rem;
+    }
+    .data-div p{
+        font-size: 0.85rem;
+    }
+    .payment-btn span{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .data-div p{
+        font-size: 0.75rem;
+    }
+    .payment-btn span{
+        font-size: 0.70rem;
+    }
+}
